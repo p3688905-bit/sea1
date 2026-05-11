@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>張岱〈海志〉解讀 (背景介紹)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'paper': '#fdfbf7',
+                        'ink': '#2c2c2c',
+                        'seal': '#b91c1c',
+                        'indigo-dark': '#1e3a8a',
+                        'gold-muted': '#a16207'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        art: ['"Ma Shan Zheng"', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background-color: #fdfbf7;
+            color: #2c2c2c;
+            scroll-behavior: smooth;
+            /* 關鍵修復：增加底部超大留白，防止被手機瀏覽器工具列遮擋 */
+            padding-bottom: 150px; 
+        }
+        .bg-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+        }
+        .section-header {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .highlight {
+            background: linear-gradient(120deg, #fef3c7 0%, #fef3c7 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 88%;
+        }
+        /* 優化捲軸 */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-paper bg-texture w-full overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-paper/95 backdrop-blur shadow-sm z-50 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 overflow-x-auto">
+            <div class="flex items-center h-14 min-w-max gap-4 md:gap-6">
+                <div class="flex items-center gap-2 sticky left-0 bg-paper/95 pr-2 z-10">
+                    <div class="w-7 h-7 bg-seal text-white flex items-center justify-center rounded font-art text-base shrink-0">岱</div>
+                    <span class="font-bold text-base tracking-widest text-ink shrink-0">海志</span>
+                </div>
+                <div class="flex space-x-4 md:space-x-6 text-sm font-medium text-gray-600">
+                    <a href="#bio" class="hover:text-seal transition shrink-0">生平</a>
+                    <a href="#works" class="hover:text-seal transition shrink-0">著作</a>
+                    <a href="#travel" class="hover:text-seal transition shrink-0">行旅</a>
+                    <a href="#belief" class="hover:text-seal transition shrink-0">信仰</a>
+                    <a href="#mountains" class="hover:text-seal transition shrink-0">名山</a>
+                    <a href="#putuo" class="hover:text-seal transition text-seal font-bold shrink-0">傳說古剎</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-12 px-4 text-center w-full">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-seal font-bold tracking-[0.2em] mb-3 text-sm">晚明小品文名家</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-ink mb-4 tracking-tight">張岱〈海志〉(上)</h1>
+            <p class="text-lg text-gray-600 font-light">全卷完整解讀版</p>
+        </div>
+    </header>
+
+    <!-- 1. Biography Section -->
+    <section id="bio" class="py-10 px-4 max-w-4xl mx-auto w-full">
+        <div class="section-header flex justify-between items-baseline">
+            <h2 class="text-2xl md:text-3xl font-bold text-ink">一、張岱生平與自傳</h2>
+            <span class="text-xs text-gray-400">P.2 - P.5</span>
+        </div>
+
+        <div class="space-y-6">
+            <div class="bg-white p-5 shadow-sm border-l-4 border-seal rounded text-sm text-gray-700 leading-relaxed">
+                <ul class="space-y-2">
+                    <li><strong class="text-ink">字號：</strong>字宗子、石公，號陶庵、蝶庵。</li>
+                    <li><strong class="text-ink">背景：</strong>出身書香世家，三代進士，家境富裕。</li>
+                    <li><strong class="text-ink">地位：</strong>小品文名家，著有《陶庵夢憶》及《西湖夢尋》。</li>
+                </ul>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-yellow-50 p-5 rounded border border-yellow-100 flex flex-col">
+                    <h4 class="font-bold text-gold-muted text-lg mb-2 border-b border-yellow-200 pb-2">前半生：繁華</h4>
+                    <p class="text-sm text-gray-700 mb-3 flex-grow">
+                        生活奢華，養尊處優，精通玩樂，屢試不第。
+                    </p>
+                    <p class="text-xs text-gray-500 bg-white/60 p-3 rounded">
+                        極愛精舍、美婢、美食、華燈、梨園、古董... <br>
+                        <span class="font-bold text-seal mt-1 inline-block">「茶淫橘虐，書蠹詩魔」</span>
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-5 rounded border border-gray-200 flex flex-col">
+                    <h4 class="font-bold text-gray-700 text-lg mb-2 border-b border-gray-300 pb-2">後半生：困頓</h4>
+                    <p class="text-sm text-gray-700 mb-3 flex-grow">
+                        48歲明亡，曾任<span class="font-bold">南明魯王朱以海</span>朝廷供職。後避亂深山，寄居佛寺，最終回紹興。
+                    </p>
+                    <p class="text-xs text-gray-500 bg-white/60 p-3 rounded">
+                        破床碎几，折鼎病琴。常至斷炊。<br>
+                        <span class="font-bold text-gray-800">潛心著作，編寫明史。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bg-ink text-gray-300 p-6 md:p-8 rounded-lg shadow-md mt-6">
+                <h3 class="text-xl font-bold text-white mb-5 border-b border-gray-600 pb-3 flex items-center gap-2">
+                    <span class="bg-seal w-2 h-6 inline-block rounded-sm"></span>
+                    自傳：〈自為墓誌銘〉
+                </h3>
+                <div class="space-y-6 text-sm leading-relaxed">
+                    <div>
+                        <span class="text-seal font-bold block mb-1 tracking-wider">【文體定義】</span>
+                        <p>「墓誌銘」是在墳墓中或墓碑上，以死者生平事蹟所寫的一份簡介。</p>
+                    </div>
+                    <div>
+                        <span class="text-seal font-bold block mb-1 tracking-wider">【寫作風格】</span>
+                        <p>在這篇墓誌銘中，作者用<span class="text-white font-bold bg-white/10 px-1 rounded">近乎遊戲的筆墨</span>，以<span class="text-white font-bold bg-white/10 px-1 rounded">自嘲戲謔的口吻</span>，寫出心中的痛楚與傷痕。</p>
+                    </div>
+                    <div class="bg-white/10 p-4 rounded border-l-4 border-gray-400">
+                        <span class="text-gray-300 font-bold block mb-2 tracking-wider">【特殊視角】</span>
+                        <p>作者設想自己已死，用<span class="text-white font-bold underline decoration-seal underline-offset-4">第三人稱的口吻</span>，拉開觀看自我的距離。對自己的行為與評價，在書寫中<span class="text-white font-bold">以他者的眼光記載</span>。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Works Section -->
+    <section id="works" class="py-10 px-4 bg-white border-y border-gray-200 w-full">
+        <div class="max-w-4xl mx-auto">
+            <div class="section-header flex justify-between items-baseline">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink">二、代表著作</h2>
+                <span class="text-xs text-gray-400">P.6 - P.8</span>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-100">
+                    <h3 class="text-xl font-bold text-indigo-900 mb-3 flex items-center gap-2">
+                        <span class="font-art text-2xl text-indigo-500">憶</span>《陶庵夢憶》
+                    </h3>
+                    <div class="text-sm text-gray-700 space-y-2">
+                        <p><span class="font-bold text-indigo-800">【釋名】</span>昔日富貴到今日窮困如<span class="highlight">「大夢將寤」</span>。</p>
+                        <p><span class="font-bold text-indigo-800">【作意】</span>作<span class="highlight">「一番夢囈」</span>以向佛前懺悔。</p>
+                        <p><span class="font-bold text-indigo-800">【內容】</span>收錄小品文124則，追寫明代江南風俗。</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-100">
+                    <h3 class="text-xl font-bold text-gold-muted mb-3 flex items-center gap-2">
+                        <span class="font-art text-2xl text-yellow-500">尋</span>《西湖夢尋》
+                    </h3>
+                    <div class="text-sm text-gray-700 space-y-2">
+                        <p><span class="font-bold text-yellow-800">【定義】</span>關於西湖掌故的書。</p>
+                        <p><span class="font-bold text-yellow-800">【結構】</span>分北路、西路、中路、南路、外景五門。</p>
+                        <p><span class="font-bold text-yellow-800">【背景】</span>明亡後，懷念昔日勝景而作。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Travel -->
+    <section id="travel" class="py-10 px-4 bg-gray-50 w-full">
+        <div class="max-w-4xl mx-auto">
+            <div class="section-header flex justify-between items-baseline">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink">三、張岱的行旅地圖</h2>
+                <span class="text-xs text-gray-400">P.9 - P.10</span>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                    少年在紹興<span class="font-bold text-ink">龐公池</span>讀書。旅遊主要沿著<span class="font-bold text-ink">南北大運河</span>的一線城市遊覽。<br>
+                    兩大遊記：<span class="font-bold">〈岱志〉</span>記遊山東泰山；<span class="font-bold text-seal">〈海志〉</span>記遊浙江普陀山。
+                </p>
+                <div class="pl-4 border-l-4 border-blue-200 space-y-4 py-2">
+                    <div class="text-sm"><span class="font-bold text-blue-900">北端：</span>北京通縣、天津</div>
+                    <div class="text-sm"><span class="font-bold text-gray-800">山東：</span>臨清、濟南 <span class="text-gray-400">(遊泰山)</span></div>
+                    <div class="text-sm"><span class="font-bold text-gray-800">江蘇：</span>清江、揚州、鎮江</div>
+                    <div class="text-sm"><span class="font-bold text-gray-800">浙江：</span>上海、嘉興、杭州、紹興</div>
+                    <div class="text-sm bg-red-50 p-2 rounded border border-red-100 text-seal font-bold">
+                        終點：寧波渡海 → 普陀山
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 & 5. Combined -->
+    <section id="belief" class="py-10 px-4 bg-white border-y border-gray-200 w-full">
+        <div class="max-w-4xl mx-auto space-y-10">
+            <div>
+                <div class="section-header flex justify-between items-baseline">
+                    <h2 class="text-2xl md:text-3xl font-bold text-ink">四、張岱的宗教信仰</h2>
+                    <span class="text-xs text-gray-400">P.11</span>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded border border-gray-200 text-sm text-gray-700">
+                        <strong class="text-indigo-900 block mb-1">1. 家庭與早期態度</strong>
+                        受母親陶氏影響，年幼隨母至<span class="font-bold">杭州高麗寺、紹興曹山庵</span>進香。個人<strong class="text-ink">不篤信佛教</strong>，但會拜佛上香布施，喜遊著名佛寺。
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded border border-gray-200 text-sm text-gray-700">
+                        <strong class="text-seal block mb-1">2. 普陀奇遇</strong>
+                        崇禎11年赴普陀山，守齋一個多月（寫成〈海志〉）。後於<span class="font-bold">寧波阿育王寺</span>，自稱從佛舍利子看到<strong class="text-ink">白衣觀音小像</strong>。
+                    </div>
+                </div>
+            </div>
+
+            <div id="mountains">
+                <div class="section-header flex justify-between items-baseline">
+                    <h2 class="text-2xl md:text-3xl font-bold text-ink">五、中國四大佛教名山</h2>
+                    <span class="text-xs text-gray-400">P.13</span>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-indigo-900 text-white p-4 rounded text-sm">
+                        <strong class="text-yellow-400 text-lg block mb-1">普陀山</strong>
+                        <span class="text-xs text-gray-300 block mb-1">浙江舟山</span>
+                        觀音菩薩道場<br>唯一海上勝地
+                    </div>
+                    <div class="bg-indigo-900 text-white p-4 rounded text-sm">
+                        <strong class="text-yellow-400 text-lg block mb-1">五台山</strong>
+                        <span class="text-xs text-gray-300 block mb-1">山西忻州</span>
+                        文殊菩薩道場<br>別名清涼山
+                    </div>
+                    <div class="bg-indigo-900 text-white p-4 rounded text-sm">
+                        <strong class="text-yellow-400 text-lg block mb-1">峨嵋山</strong>
+                        <span class="text-xs text-gray-300 block mb-1">四川樂山</span>
+                        普賢菩薩道場<br>騎六牙白象
+                    </div>
+                    <div class="bg-indigo-900 text-white p-4 rounded text-sm">
+                        <strong class="text-yellow-400 text-lg block mb-1">九華山</strong>
+                        <span class="text-xs text-gray-300 block mb-1">安徽池州</span>
+                        地藏菩薩道場<br>袈裟包覆整山
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Legends & Temples (Padding Fixed) -->
+    <section id="putuo" class="py-12 px-4 max-w-4xl mx-auto w-full">
+        <div class="section-header flex justify-between items-baseline">
+            <h2 class="text-3xl md:text-4xl font-black text-ink">六、普陀山傳說與古剎</h2>
+            <span class="text-sm text-gray-400">P.15 - P.24</span>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-seal mb-6 border-b-2 border-seal inline-block pb-1">普陀山的傳說故事</h3>
+            <div class="space-y-6">
+                <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">
+                        <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-sm mr-2 font-mono">漢代前</span>
+                        「梅岑山」的由來
+                    </h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        秦始皇視為蓬萊山(海上仙山)。漢平帝時，道士<span class="font-bold text-ink">梅福</span>(字子真)與從弟<span class="font-bold text-ink">梅圖</span>到此山隱居修仙，故西漢至宋代名「梅岑山」。
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">
+                        <span class="bg-gray-200 text-gray-700 px-2 py-0.5 rounded text-sm mr-2 font-mono">唐代</span>
+                        潮音洞「焚指供佛」
+                    </h4>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">
+                        梵僧於潮音洞<span class="font-bold text-seal">焚指供佛</span>感觀音現身。後信士效仿，官府立碑禁止。
+                    </p>
+                    <p class="text-xs bg-gray-50 text-gray-500 p-2 rounded border-l-2 border-gray-300">
+                        *焚指：用火燃燒手指受苦，作為修行的方法。
+                    </p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-lg border-2 border-red-100 shadow-sm">
+                    <h4 class="text-xl font-bold text-seal mb-3">
+                        <span class="bg-white text-seal px-2 py-0.5 rounded text-sm mr-2 font-mono border border-red-200">大中十二年</span>
+                        「不肯去觀音」傳奇
+                    </h4>
+                    <p class="text-sm text-gray-700 mb-2">
+                        日本僧<span class="font-bold text-seal">慧鍔</span>請觀音像回國，途經普陀：
+                    </p>
+                    <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1 mb-3">
+                        <li>第一日：狂風巨浪。</li>
+                        <li>第二日：白霧擋道，繞回原處。</li>
+                        <li>第三日：海升<span class="font-bold text-seal">「鐵蓮花」</span>，<span class="font-bold text-seal">「鐵牛」</span>吞花開路。</li>
+                    </ul>
+                    <p class="text-sm font-bold text-indigo-900 bg-white p-3 rounded border border-red-100">
+                        結局：慧鍔感嘆「觀音菩薩不肯離去」，建「不肯去觀音院」。
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">
+                        <span class="bg-gray-300 text-gray-800 px-2 py-0.5 rounded text-sm mr-2 font-mono">宋代</span>
+                        正名「普陀山」
+                    </h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        因景似《華嚴經》之「補怛洛伽山」。經載觀音與<span class="font-bold text-ink">多羅菩薩</span>常住，<span class="font-bold text-ink">善財童子</span>亦曾來訪。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-bold text-indigo-900 mb-6 border-b-2 border-indigo-900 inline-block pb-1">古剎名勝沿革</h3>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 法雨寺 -->
+                <div class="bg-white p-6 rounded-lg border border-indigo-200 shadow-md">
+                    <h4 class="text-xl font-bold text-indigo-900 mb-1">法雨禪寺 <span class="text-xs bg-indigo-50 px-2 py-1 rounded ml-2 align-middle">後寺</span></h4>
+                    <p class="text-xs text-gray-500 mb-4">※ 即張岱〈海志〉中的「鎮海寺」</p>
+                    <ul class="text-sm text-gray-700 space-y-3">
+                        <li><span class="font-bold text-gray-500">明萬曆8年：</span>蜀僧大智建「海潮庵」。</li>
+                        <li><span class="font-bold text-gray-500">明萬曆34年：</span>賜額「護國永壽鎮海禪寺」。</li>
+                        <li class="bg-indigo-50 p-3 rounded border border-indigo-100">
+                            <span class="font-bold text-indigo-900 block mb-1">清康熙38年：</span>
+                            <span><span class="font-bold bg-yellow-200 px-1">將南京明故宮拆解移至此地</span>，重建圓通寶殿，賜匾「天華法雨」。</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 梵音洞與善財洞 -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md flex flex-col justify-center">
+                    <h4 class="text-xl font-bold text-indigo-900 mb-4 text-center border-b border-gray-100 pb-2">梵音洞 與 善財洞</h4>
+                    <p class="text-sm text-gray-500 text-center mb-4">位於普陀山東北隅</p>
+                    
+                    <div class="grid gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                            <strong class="text-blue-900 text-lg block mb-2">梵音洞</strong>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                相傳觀音菩薩曾在此梵音洞現身說法，吸引眾人前來瞻仰。
+                                <br><br>
+                                <span class="text-xs text-gray-500">*前身為焚指供佛的潮音洞 (指同為觀音顯聖勝地)。</span>
+                            </p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                            <strong class="text-green-900 text-lg block mb-2">善財洞</strong>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                位於梵音洞旁邊，相傳為<span class="font-bold">善財童子</span>棲身之處。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-gray-400 py-12 text-center w-full mt-10">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-sm mb-2">資料來源：0506張岱〈海志〉解讀(上).pdf</p>
+            <p class="text-xs opacity-50">Interactive Document</p>
+            <p class="text-[10px] mt-4 opacity-30">END OF PAGE</p>
+        </div>
+    </footer>
+
+</body>
+</html>
